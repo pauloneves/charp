@@ -1,10 +1,10 @@
 # Afazeres
 
 - [x] ajusta fontes
-- [ ] cor de destaque é o padrão para lines
-- [ ] experimentar color brewer pastel
+- [x] cor de destaque é o padrão para lines
+- [x] experimentar color brewer pastel
 - [ ] cor padrão: lightslategray
-- [ ] cor destaque: orange e verde e azul bndes
+- [x] cor destaque: orange e verde e azul bndes
 - [ ] https://stories.univ.ai/improvingfigures/
 - [ ] barras: grid em barras tem que ter cor  do fundo (branco) e passar sobre a barra ax.set_axisbelow(True) Usar tracejado
 - [ ] experimentar com https://github.com/tonysyu/matplotlib-style-gallery

@@ -110,7 +110,7 @@
 ## for more information on line properties.
 lines.linewidth: 1.5               # line width in points
 #lines.linestyle: -                 # solid line
-#lines.color:     C0                # has no affect on plot(); see axes.prop_cycle
+lines.color:     orange                # has no affect on plot(); see axes.prop_cycle
 #lines.marker:          None        # the default marker
 #lines.markerfacecolor: auto        # the default marker face color
 #lines.markeredgecolor: auto        # the default marker edge color
@@ -407,7 +407,7 @@ axes.spines.right:  False
 
 #axes.unicode_minus: True  # use Unicode for the minus symbol rather than hyphen.  See
                            # https://en.wikipedia.org/wiki/Plus_and_minus_signs#Character_codes
-axes.prop_cycle: cycler('color', ['b3cde3','ccebc5','decbe4','fed9a6','ffffcc','e5d8bd', 'fbb4ae']) # pastel from colorbrewer
+axes.prop_cycle: cycler('color', ['b3cde3','e5d8bd','ccebc5','decbe4','fed9a6','ffffcc', 'fbb4ae']) # pastel from colorbrewer
                   # MUST also change patch.facecolor
                   # color cycle for plot lines as list of string color specs:
                   # single letter, long name, or web-style hex
