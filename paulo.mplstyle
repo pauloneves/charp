@@ -400,10 +400,10 @@ axes.axisbelow:     True    # draw axis gridlines and ticks:
                                      # at least this number of significant
                                      # digits from tick labels.
 
-axes.spines.left:   True  # display axis spines
+axes.spines.left:   False  # display axis spines
 axes.spines.bottom: True
-axes.spines.top:    True
-axes.spines.right:  True
+axes.spines.top:    False
+axes.spines.right:  False
 
 #axes.unicode_minus: True  # use Unicode for the minus symbol rather than hyphen.  See
                            # https://en.wikipedia.org/wiki/Plus_and_minus_signs#Character_codes
@@ -510,7 +510,7 @@ ytick.direction:     out     # direction: {in, out, inout}
 ## ***************************************************************************
 ## * GRIDS                                                                   *
 ## ***************************************************************************
-grid.color:     .8  # grid color
+grid.color:     .92  # grid color
 grid.linestyle: -       # solid
 grid.linewidth: 1     # in points
 #grid.alpha:     1.0     # transparency, between 0.0 and 1.0
