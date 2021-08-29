@@ -362,19 +362,19 @@ axes.facecolor:     white   # axes background color
 axes.edgecolor:     .8   # axes edge color
 axes.linewidth:     1.25     # edge line width
 axes.grid:          True   # display grid or not
-#axes.grid.axis:     both    # which axis the grid should apply to
+axes.grid.axis:     y # both    # which axis the grid should apply to
 #axes.grid.which:    major   # grid lines at {major, minor, both} ticks
-#axes.titlelocation: center  # alignment of the title: {left, right, center}
-axes.titlesize:     medium   # font size of the axes title
-#axes.titleweight:   normal  # font weight of title
+axes.titlelocation: left  # alignment of the title: {left, right, center}
+axes.titlesize:     xx-large   # font size of the axes title
+axes.titleweight:   normal  # font weight of title
 #axes.titlecolor:    auto    # color of the axes title, auto falls back to
                              # text.color as default value
-#axes.titley:        None    # position title (axes relative units).  None implies auto
+axes.titley:        1.02    # position title (axes relative units).  None implies auto
 #axes.titlepad:      6.0     # pad between axes and title in points
 axes.labelsize:     medium  # font size of the x and y labels
 #axes.labelpad:      4.0     # space between label and axis
 #axes.labelweight:   normal  # weight of the x and y labels
-axes.labelcolor:    .15
+axes.labelcolor:    .51
 axes.axisbelow:     True    # draw axis gridlines and ticks:
                              #     - below patches (True)
                              #     - above patches but below lines ('line')
@@ -474,7 +474,7 @@ xtick.major.width:   1.25     # major tick width in points
 xtick.minor.width:   1.0     # minor tick width in points
 #xtick.major.pad:     3.5     # distance to major tick label in points
 #xtick.minor.pad:     3.4     # distance to the minor tick label in points
-xtick.color:         .15   # color of the ticks
+xtick.color:         .51   # color of the ticks
 #xtick.labelcolor:    inherit # color of the tick labels or inherit from xtick.color
 xtick.labelsize:     11 # medium  # font size of the tick labels
 xtick.direction:     out     # direction: {in, out, inout}
@@ -495,7 +495,7 @@ ytick.major.width:   1.25     # major tick width in points
 ytick.minor.width:   1.0     # minor tick width in points
 #ytick.major.pad:     3.5     # distance to major tick label in points
 #ytick.minor.pad:     3.4     # distance to the minor tick label in points
-ytick.color:         .15   # color of the ticks
+ytick.color:         .51   # color of the ticks
 #ytick.labelcolor:    inherit # color of the tick labels or inherit from ytick.color
 ytick.labelsize:     11 # medium  # font size of the tick labels
 ytick.direction:     out     # direction: {in, out, inout}
@@ -547,8 +547,8 @@ legend.title_fontsize: None    # None sets to the same as the default axes.
 ## * FIGURE                                                                  *
 ## ***************************************************************************
 ## See https://matplotlib.org/api/figure_api.html#matplotlib.figure.Figure
-#figure.titlesize:   large     # size of the figure title (``Figure.suptitle()``)
-#figure.titleweight: normal    # weight of the figure title
+figure.titlesize:   xx-large     # size of the figure title (``Figure.suptitle()``)
+figure.titleweight: bold    # weight of the figure title
 #figure.figsize:     6.4, 4.8  # figure size in inches
 #figure.dpi:         100       # figure dots per inch
 figure.facecolor:   white     # figure face color
