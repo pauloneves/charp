@@ -369,7 +369,7 @@ axes.titlesize:     xx-large   # font size of the axes title
 axes.titleweight:   normal  # font weight of title
 #axes.titlecolor:    auto    # color of the axes title, auto falls back to
                              # text.color as default value
-axes.titley:        1.02    # position title (axes relative units).  None implies auto
+axes.titley:        1.01    # position title (axes relative units).  None implies auto
 #axes.titlepad:      6.0     # pad between axes and title in points
 axes.labelsize:     medium  # font size of the x and y labels
 #axes.labelpad:      4.0     # space between label and axis
@@ -485,7 +485,7 @@ xtick.direction:     out     # direction: {in, out, inout}
 #xtick.minor.bottom:  True    # draw x axis bottom minor ticks
 #xtick.alignment:     center  # alignment of xticks
 
-#ytick.left:          True    # draw ticks on the left side
+ytick.left:          False    # draw ticks on the left side
 ytick.right:         False   # draw ticks on the right side
 #ytick.labelleft:     True    # draw tick labels on the left side
 #ytick.labelright:    False   # draw tick labels on the right side
@@ -521,7 +521,7 @@ grid.linewidth: 1     # in points
 ## ***************************************************************************
 #legend.loc:           best
 legend.frameon:       True     # if True, draw the legend on a background patch
-legend.framealpha:    1      # legend patch transparency
+legend.framealpha:    .7      # legend patch transparency
 #legend.facecolor:     inherit  # inherit from axes.facecolor; or color spec
 legend.edgecolor:     None      # background patch boundary color
 #legend.fancybox:      True     # if True, use a rounded box for the
