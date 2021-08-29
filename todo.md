@@ -1,6 +1,6 @@
 # Afazeres
 
-- [ ] ajusta fontes
+- [x] ajusta fontes
 - [ ] cor de destaque é o padrão para lines
 - [ ] experimentar color brewer pastel
 - [ ] cor padrão: lightslategray
