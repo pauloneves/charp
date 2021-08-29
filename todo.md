@@ -2,16 +2,16 @@
 
 - [x] estilos seaborn
 - [x] paleta de cores muted
-- [ ] sem borda
-- [ ] título à esquerda
+- [x] sem borda
+- [x] título à esquerda
 - [ ] tamanho todo
-- [ ] experimentar sem ticks no eixo y
+- [x] experimentar sem ticks no eixo y
 - [ ] cor padrão: lightslategray
 - [ ] cor destaque: orange e verde e azul bndes
 - [ ] https://stories.univ.ai/improvingfigures/
 - [ ] grid em barras tem que ter cor  do fundo (branco) e passar sobre a barra ax.set_axisbelow(True) Usar tracejado
 - [ ] experimentar com https://github.com/tonysyu/matplotlib-style-gallery
-
+- [ ] Função para título sobre label esquerdo
 
 ## Reference
 
