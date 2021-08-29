@@ -1,7 +1,7 @@
 # Afazeres
 
 - [ ] cor padrão: lightslategray
-- [ ] barras: grid em barras tem que ter cor  do fundo (branco) e passar sobre a barra ax.set_axisbelow(True) Usar tracejado
+- [x] barras: grid em barras tem que ter cor  do fundo (branco) e passar sobre a barra ax.set_axisbelow(True) Usar tracejado
 - [ ] experimentar com https://github.com/tonysyu/matplotlib-style-gallery
 - [ ] Função para título sobre label esquerdo
 - [ ] linhas: função para legenda junto a linhas (ou pelo menos ordenando igual aos últimos valores)
