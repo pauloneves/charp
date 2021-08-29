@@ -1,23 +1,24 @@
 # Afazeres
 
-- [x] ajusta fontes
-- [x] cor de destaque é o padrão para lines
-- [x] experimentar color brewer pastel
 - [ ] cor padrão: lightslategray
-- [x] cor destaque: orange e verde e azul bndes
-- [ ] https://stories.univ.ai/improvingfigures/
 - [ ] barras: grid em barras tem que ter cor  do fundo (branco) e passar sobre a barra ax.set_axisbelow(True) Usar tracejado
 - [ ] experimentar com https://github.com/tonysyu/matplotlib-style-gallery
 - [ ] Função para título sobre label esquerdo
 - [ ] linhas: função para legenda junto a linhas (ou pelo menos ordenando igual aos últimos valores)
 - [ ] barras: função para escrever valores sobre as barras
 - [ ] função para destacar barra/linha com cor
+- [ ] Cursar https://end-to-end-machine-learning.teachable.com/courses/enrolled/527859
 - [x] estilos seaborn
 - [x] paleta de cores muted
 - [x] sem borda
 - [x] título à esquerda
 - [x] tamanho todo
 - [x] experimentar sem ticks no eixo y
+- [x] ajusta fontes
+- [x] cor de destaque é o padrão para lines
+- [x] experimentar color brewer pastel
+- [x] cor destaque: orange e verde e azul bndes
+- [x] https://stories.univ.ai/improvingfigures/
 
 ## Reference
 
