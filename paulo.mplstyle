@@ -407,7 +407,7 @@ axes.spines.right:  False
 
 #axes.unicode_minus: True  # use Unicode for the minus symbol rather than hyphen.  See
                            # https://en.wikipedia.org/wiki/Plus_and_minus_signs#Character_codes
-axes.prop_cycle: cycler('color', ['cfcfff', 'a1c9f4', 'ffb482', '8de5a1', 'ff9f9b', 'd0bbff', 'debb9b', 'fab0e4',  'fffea3', 'b9f2f0']) # pastel
+axes.prop_cycle: cycler('color', ['b3cde3','ccebc5','decbe4','fed9a6','ffffcc','e5d8bd', 'fbb4ae']) # pastel from colorbrewer
                   # MUST also change patch.facecolor
                   # color cycle for plot lines as list of string color specs:
                   # single letter, long name, or web-style hex
@@ -485,7 +485,7 @@ xtick.direction:     out     # direction: {in, out, inout}
 #xtick.minor.bottom:  True    # draw x axis bottom minor ticks
 #xtick.alignment:     center  # alignment of xticks
 
-ytick.left:          True    # draw ticks on the left side
+ytick.left:          False    # draw ticks on the left side
 ytick.right:         False   # draw ticks on the right side
 #ytick.labelleft:     True    # draw tick labels on the left side
 #ytick.labelright:    False   # draw tick labels on the right side
