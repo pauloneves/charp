@@ -4,10 +4,12 @@
 - [x] barras: grid em barras tem que ter cor  do fundo (branco) e passar sobre a barra ax.set_axisbelow(True) Usar tracejado
 - [ ] experimentar com https://github.com/tonysyu/matplotlib-style-gallery
 - [ ] Função para título sobre label esquerdo
-- [ ] linhas: função para legenda junto a linhas (ou pelo menos ordenando igual aos últimos valores)
-- [ ] barras: função para escrever valores sobre as barras
+- [ ] linhas: função para legenda junto a linhas (ou pelo menos ordenando igual aos últimos valores).Opção para escrever com cores das linhas
+- [ ] barras: função para escrever valores sobre as barras. 
 - [ ] função para destacar barra/linha com cor
 - [ ] Cursar https://end-to-end-machine-learning.teachable.com/courses/enrolled/527859
+- [ ] função highlight: destaca um ou mais índices e muta os outros com lightslategray. Opção degradê para mutar  com palette de cinza claro sendo maiores valores mais intenso. Opção para não mudar cores existentes. Funcionar com linhas e barras
+- controle de cor de destaque. Tem que ter o conceito de cor de destaque corrente.
 - [x] estilos seaborn
 - [x] paleta de cores muted
 - [x] sem borda
