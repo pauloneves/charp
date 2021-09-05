@@ -3,7 +3,9 @@ CharP is Charts for Paulo — Paulos aux functions and preferences for beautiful
 and functional charts
 """
 
+import matplotlib as mpl
 import matplotlib.pyplot as plt
+
 
 plt.style.use("./paulo.mplstyle")
 
@@ -17,11 +19,12 @@ def set_title(title, fontsize=16, ax=None):
     # https://stackoverflow.com/questions/62997001/matplotlib-how-to-exact-align-the-title-to-the-y-label
     if ax is None:
         ax = plt.gca()
-
-    bbox = ax.get_yticklabels()[-1].get_window_extent()
-    print(bbox)
-    x, _ = ax.transAxes.inverted().transform([0, bbox.y0])
-    return ax.set_title(title, ha="left", x=0, fontsize=fontsize)
+    plt.gcf().canvas.draw()  # without this, it won't work
+    x_min = min(lb.get_window_extent().x0 for lb in ax.get_yticklabels())
+    x_min = min(mpl.text.Text.get_window_extent(lb).x0 for lb in ax.get_yticklabels())
+    x, _ = ax.transAxes.inverted().transform([x_min, 0])
+    plt.gcf().canvas.draw()  # without this, it won't work
+    return ax.set_title(title, ha="left", x=x, fontsize=fontsize)
 
 
 def rotate_xlabels(angle=45):
@@ -54,9 +57,21 @@ def bar(ax=None):
     if ax is None:
         ax = plt.gca()
     # white grid
-    ax.grid(axis="y", color="white", linestyle="--")
+    ax.grid(axis="y", color="white", linestyle="dotted")
     ax.set_axisbelow(False)
 
     ax.tick_params(
         axis="x", bottom=False,
     )
+
+
+def example_chart():
+    # in ipython type: %matplotlib
+    import seaborn as sns
+
+    df = sns.load_dataset("iris")
+    fig = plt.figure()
+    ax = fig.gca()
+    plt.plot(df.query('species=="virginica"').petal_length)
+    ax.set_title("Maria vai com as outras")
+    return ax
