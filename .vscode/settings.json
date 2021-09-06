@@ -1,9 +1,32 @@
 {
     "workbench.colorCustomizations": {
-        "activityBar.background": "#2F2F0F",
-        "titleBar.activeBackground": "#424215",
-        "titleBar.activeForeground": "#FAFAF1"
+        "activityBar.background": "#2d2d11",
+        "titleBar.activeBackground": "#080803",
+        "titleBar.activeForeground": "#e7e7e7",
+        "activityBar.activeBackground": "#2d2d11",
+        "activityBar.activeBorder": "#2c7474",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#2c7474",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "statusBar.background": "#080803",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#2d2d11",
+        "titleBar.inactiveBackground": "#08080399",
+        "titleBar.inactiveForeground": "#e7e7e799"
     },
+    "peacock.color": "#080803",
     "python.linting.flake8Enabled": true,
-    "python.formatting.provider": "black"
+    "python.linting.flake8Args": [
+        "--max-line-length=100"
+    ],
+    "python.formatting.provider": "black",
+    "python.analysis.typeCheckingMode": "basic",
+    "editor.formatOnSave": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.enabled": true,
+    "editor.formatOnPaste": true
 }
