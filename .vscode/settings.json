@@ -31,9 +31,10 @@
         "."
     ],
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
     "python.testing.nosetestsEnabled": false,
     "python.linting.pylintEnabled": false,
     "python.linting.enabled": true,
-    "editor.formatOnPaste": true
+    "editor.formatOnPaste": true,
+    "files.trimTrailingWhitespace": true
 }

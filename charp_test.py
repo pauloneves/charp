@@ -6,23 +6,17 @@ from matplotlib.text import Text
 
 def test_break2lines():
     s = "1234 1234 1234 1234"
-    assert ["1234 1234", "1234 1234"] == charp._break2lines(
-        s
-    ), "Must break in 2 lines. Always."
+    assert ["1234 1234", "1234 1234"] == charp._break2lines(s), "Must break in 2 lines. Always."
 
 
 def test_break2lines_middle():
     s = "123 1234 123"
-    assert ["123 1234", "123"] == charp._break2lines(
-        s
-    ), "Must break in 2 lines. Always."
+    assert ["123 1234", "123"] == charp._break2lines(s), "Must break in 2 lines. Always."
 
 
 def test_break2lines_second_bigger():
     s = "123 123 12 12345"
-    assert ["123 123", "12 12345"] == charp._break2lines(
-        s
-    ), "Must break in 2 lines. Always."
+    assert ["123 123", "12 12345"] == charp._break2lines(s), "Must break in 2 lines. Always."
 
 
 def test_break2lines_acceptable_size():
@@ -38,4 +32,3 @@ def test_break_labels():
     labels = build_ticklabels(["abc cde efg", "abc cde"])
     labels_breaked = charp.break_labels(labels)
     assert ["abc cde\nefg", "abc cde"] == labels_breaked
-
