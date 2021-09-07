@@ -2,10 +2,12 @@
 CharP is Charts for Paulo — Paulos aux functions and preferences for beautiful
 and functional charts
 """
+import textwrap
+from typing import List, Iterable
 
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-
+from matplotlib.text import Text
 
 plt.style.use("./paulo.mplstyle")
 
@@ -31,7 +33,23 @@ def rotate_xlabels(angle=45):
     plt.tick_params(axis="x", labelrotation=angle, ha="right")
 
 
-def barh(ax=None):
+def _break2lines(s: str, acceptable_size: int = None) -> List[str]:
+    if acceptable_size is not None and len(s) <= acceptable_size:
+        return [s]
+    split = s.split()
+    min_diff_pos = None
+    min_diff = 10000
+    for i in range(1, len(split)):
+        first_line = " ".join(split[:i])
+        second_line = " ".join(split[i:])
+        diff = abs(len(first_line) - len(second_line))
+        if diff <= min_diff:
+            min_diff = diff
+            min_diff_pos = i
+    return [" ".join(split[:min_diff_pos]), " ".join(split[min_diff_pos:])]
+
+
+def barh(break_lines=False, ax=None):
     if ax is None:
         ax = plt.gca()
     # label on top
@@ -50,7 +68,21 @@ def barh(ax=None):
 
     # spines
     ax.spines["bottom"].set_visible(False)
-    # identar à direita?
+
+    # labels
+    if break_lines:
+        ax.set_yticklabels(break_labels(ax.get_yticklabels()))
+
+
+def break_labels(tick_labels: Iterable[Text]) -> List[str]:
+    label_biggest = max([label.get_text() for label in tick_labels], key=len)
+    line1, line2 = _break2lines(label_biggest)
+    acceptable_size = max(len(line1), len(line2))
+    labels_breaked = [
+        "\n".join(_break2lines(label.get_text(), acceptable_size))
+        for label in tick_labels
+    ]
+    return labels_breaked
 
 
 def bar(ax=None):
