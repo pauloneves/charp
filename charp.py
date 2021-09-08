@@ -97,6 +97,36 @@ def bar(ax=None):
     )
 
 
+def line(ax=None):
+    if ax is None:
+        ax = plt.gca()
+
+    import numpy as np
+
+    for line in ax.lines:
+        data_x, data_y = line.get_data()
+
+        right_most_x = right_most_y = None
+        for i in reversed(range(len(data_x))):
+            right_most_x = data_x[i]
+            right_most_y = data_y[i]
+            if np.isreal(right_most_x) and np.isreal(right_most_y):
+                break
+        assert (
+            right_most_x is not None and right_most_y is not None
+        ), f"Line {line.get_label()} has no valid points"
+
+        ax.annotate(
+            line.get_label(),
+            xy=(right_most_x, right_most_y),
+            xytext=(5, 0),
+            textcoords="offset points",
+            va="center",
+            color=line.get_color(),
+        )
+    ax.legend().set_visible(False)
+
+
 def example_chart():
     # in ipython type: %matplotlib
     import seaborn as sns
