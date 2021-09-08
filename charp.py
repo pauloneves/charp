@@ -2,9 +2,10 @@
 CharP is Charts for Paulo — Paulos aux functions and preferences for beautiful
 and functional charts
 """
-from typing import List, Iterable
+from typing import Iterable, List
 
 import matplotlib.pyplot as plt
+import numpy as np
 from matplotlib.text import Text
 
 plt.style.use("./paulo.mplstyle")
@@ -101,8 +102,7 @@ def line(ax=None):
     if ax is None:
         ax = plt.gca()
 
-    import numpy as np
-
+    ax.spines["bottom"].set_visible(False)
     for line in ax.lines:
         data_x, data_y = line.get_data()
 
