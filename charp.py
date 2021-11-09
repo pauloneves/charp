@@ -7,8 +7,11 @@ from typing import Iterable, List
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.text import Text
+from pathlib import Path
 
-plt.style.use("./paulo.mplstyle")
+default_style = Path(__file__).parent / "paulo.mplstyle"
+assert default_style.exists(), "Arquivo de estilo padrão não encontrado: " + default_style
+plt.style.use(default_style)
 
 # default is orange
 color_highlight = plt.rcParams["lines.color"]  # type: ignore
