@@ -3,7 +3,7 @@
 - [ ] cor padrão: lightslategray
 - [x] barras: grid em barras tem que ter cor  do fundo (branco) e passar sobre a barra ax.set_axisbelow(True) Usar tracejado
 - [ ] experimentar com https://github.com/tonysyu/matplotlib-style-gallery
-- [ ] Função para título sobre label esquerdo
+- [x] Função para título sobre label esquerdo
 - [ ] linhas: função para legenda junto a linhas (ou pelo menos ordenando igual aos últimos valores).Opção para escrever com cores das linhas
 - [ ] barras: função para escrever valores sobre as barras. 
 - [ ] função para destacar barra/linha com cor

@@ -10,7 +10,7 @@ from matplotlib.text import Text
 from pathlib import Path
 
 default_style = Path(__file__).parent / "paulo.mplstyle"
-assert default_style.exists(), "Arquivo de estilo padrão não encontrado: " + default_style
+assert default_style.exists(), f"Arquivo de estilo padrão não encontrado: {default_style}"
 plt.style.use(default_style)
 
 # default is orange
